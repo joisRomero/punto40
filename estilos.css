@@ -1,0 +1,52 @@
+.card-sm {
+      max-width: 220px;
+      margin: auto;
+    }
+
+    .discount-badge {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background-color: #563de3;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+
+    .card-img-top {
+      height: 160px;
+      object-fit: contain;
+      padding: 10px;
+    }
+
+    .card-title {
+      font-size: 0.85rem;
+      min-height: 2.5em;
+    }
+
+    .price-final {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .price-original {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 0.8rem;
+    }
+
+    .btn-circle {
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    

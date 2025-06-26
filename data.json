@@ -1,0 +1,81 @@
+[
+  {
+    "categoria": "Combos",
+    "productos": [
+      {
+        "id": 1,
+        "titulo": "Pack (1 Schweppes Ginger Ale x 1.5 Lt + 1 Whisky Chivas Regal 12Yo x 700 Ml + Hielo 1.5 Kg)",
+        "precioActual": 62.90,
+        "precioOriginal": 90.70,
+        "descuento": 31,
+        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "alt": "Vodka Pack"
+      },
+      {
+        "id": 2,
+        "titulo": "Pack (2 Ron Captain Morgan 700ml + 1...)",
+        "precioActual": 66.90,
+        "precioOriginal": 105.00,
+        "descuento": 36,
+        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "alt": "Ron Pack"
+      }
+    ]
+  },
+  {
+    "categoria": "Ron",
+    "productos": [
+      {
+        "id": 3,
+        "titulo": "Ron Cartavio Black 750ml",
+        "precioActual": 32.50,
+        "precioOriginal": 45.00,
+        "descuento": 28,
+        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "alt": "Ron Cartavio"
+      }
+    ]
+  },
+  {
+    "categoria": "Vino",
+    "productos": [
+      {
+        "id": 4,
+        "titulo": "Vino Tabernero Borgoña 750ml",
+        "precioActual": 21.00,
+        "precioOriginal": 28.00,
+        "descuento": 25,
+        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "alt": "Vino Tabernero"
+      }
+    ]
+  },
+  {
+    "categoria": "Whisky",
+    "productos": [
+      {
+        "id": 5,
+        "titulo": "Whisky Johnnie Walker Red Label 750ml",
+        "precioActual": 79.90,
+        "precioOriginal": 109.00,
+        "descuento": 27,
+        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "alt": "Whisky Red Label"
+      }
+    ]
+  },
+  {
+    "categoria": "Pisco",
+    "productos": [
+      {
+        "id": 6,
+        "titulo": "Pisco Queirolo Acholado 750ml",
+        "precioActual": 29.90,
+        "precioOriginal": 39.90,
+        "descuento": 25,
+        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "alt": "Pisco Queirolo"
+      }
+    ]
+  }
+]
