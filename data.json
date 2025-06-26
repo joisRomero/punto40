@@ -7,7 +7,7 @@
         "titulo": "Pack (1 Schweppes Ginger Ale x 1.5 Lt + 1 Whisky Chivas Regal 12Yo x 700 Ml + Hielo 1.5 Kg)",
         "precioActual": 62.90,
         "precioOriginal": 90.70,
-        "descuento": 31,
+        "descuento": 0,
         "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
         "alt": "Vodka Pack"
       },
@@ -26,12 +26,39 @@
     "categoria": "Ron",
     "productos": [
       {
+        "id": 1,
+        "titulo": "Ron Cartavio Black 250ml",
+        "precioActual": 15.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/ron-cartavio-black-250-ml.webp",
+        "alt": "Ron Cartavio"
+      },
+      {
+        "id": 2,
+        "titulo": "Ron Cartavio Blanco 250ml",
+        "precioActual": 15.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/ron-cartavio-blanco-250-ml.webp",
+        "alt": "Ron Cartavio"
+      },
+      {
         "id": 3,
         "titulo": "Ron Cartavio Black 750ml",
-        "precioActual": 32.50,
-        "precioOriginal": 45.00,
-        "descuento": 28,
-        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "precioActual": 25.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/ron-cartavio-black-750-ml.webp",
+        "alt": "Ron Cartavio"
+      },
+      {
+        "id": 12,
+        "titulo": "Ron Flor de Caña 4 Años 750ml",
+        "precioActual": 54.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/flor-cana-4.webp",
         "alt": "Ron Cartavio"
       }
     ]
@@ -51,16 +78,30 @@
     ]
   },
   {
+    "categoria": "Espumante",
+    "productos": [
+      {
+        "id": 10,
+        "titulo": "Espumante Queirolo Primado 750ml",
+        "precioActual": 16.00,
+        "precioOriginal": 0.00,
+        "descuento": 0,
+        "imagen": "./img/espumante-queirolo-primado-750.webp",
+        "alt": "Espumante Queirolo Primado 750ml"
+      }
+    ]
+  },
+  {
     "categoria": "Whisky",
     "productos": [
       {
         "id": 5,
-        "titulo": "Whisky Johnnie Walker Red Label 750ml",
-        "precioActual": 79.90,
-        "precioOriginal": 109.00,
-        "descuento": 27,
-        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
-        "alt": "Whisky Red Label"
+        "titulo": "Whisky Old Times Red Label 750ml",
+        "precioActual": 27.00,
+        "precioOriginal": 0.00,
+        "descuento": 0,
+        "imagen": "./img/wiskey-old-time-red-label-750.webp",
+        "alt": "Whisky Old Times Red Label 750ml"
       }
     ]
   },
@@ -68,12 +109,30 @@
     "categoria": "Pisco",
     "productos": [
       {
-        "id": 6,
-        "titulo": "Pisco Queirolo Acholado 750ml",
-        "precioActual": 29.90,
-        "precioOriginal": 39.90,
-        "descuento": 25,
-        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "id": 13,
+        "titulo": "Pisco Pancho Fierro 750ml",
+        "precioActual": 28.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/pisco-pancho-fierro-750.webp",
+        "alt": "Pisco Queirolo"
+      },
+      {
+        "id": 14,
+        "titulo": "Pisco Tabernero La Botija 700ml",
+        "precioActual": 30.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/pisco-tabernero-botija-700.webp",
+        "alt": "Pisco Queirolo"
+      },
+      {
+        "id": 14,
+        "titulo": "Pisco Cuatro Gallos 700ml",
+        "precioActual": 43.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/pisco-cuatro-gallos-700.webp",
         "alt": "Pisco Queirolo"
       }
     ]

@@ -30,14 +30,14 @@
 
   <!-- Modal de Detalle -->
   <div class="modal fade" id="modalDetalle" tabindex="-1" aria-labelledby="modalDetalleLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="modalDetalleLabel">Detalle del producto</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
         <div class="modal-body text-center">
-          <img id="modalImagen" src="" alt="" class="img-fluid mb-3" style="max-height: 150px;">
+          <img id="modalImagen" src="" alt="" class="img-fluid mb-3">
           <h6 id="modalTitulo" class="fw-bold"></h6>
           <p class="mb-1">
             <span id="modalPrecio" class="price-final"></span>
@@ -77,24 +77,26 @@
         // Guarda todos los productos en una sola lista para el modal
         productos.push(...cat.productos);
 
+        // <a href="/ver-mas/${cat.categoria.toLowerCase()}" class="text-decoration-none text-primary small fw-semibold">
+        //       Ver más <i class="bi bi-chevron-right"></i>
+        //     </a>
+
         seccion.innerHTML = `
           <div class="d-flex justify-content-between align-items-center p-2 mb-2">
             <p class="h4 mb-0">${cat.categoria}</p>
-            <a href="/ver-mas/${cat.categoria.toLowerCase()}" class="text-decoration-none text-primary small fw-semibold">
-              Ver más <i class="bi bi-chevron-right"></i>
-            </a>
+            
           </div>
           <div class="row g-2">
             ${cat.productos.map(p => `
               <div class="col-6 col-sm-4 col-md-2">
                 <div class="card card-sm position-relative shadow-sm h-100">
-                  <span class="discount-badge">-${p.descuento}%</span>
+                   ${p.descuento > 0 ? `<span class="discount-badge">-${p.descuento}%</span>` : ''}
                   <img src="${p.imagen}" class="card-img-top" alt="${p.alt}">
                   <div class="card-body text-center">
                     <h6 class="card-title">${p.titulo}</h6>
                     <p class="mb-1">
                       <span class="price-final">S/ ${p.precioActual.toFixed(2)}</span>
-                      <span class="price-original">S/ ${p.precioOriginal.toFixed(2)}</span>
+                      ${p.precioOriginal > 0 ? `<span class="price-original">S/ ${p.precioOriginal.toFixed(2)}</span>` : ''}
                     </p>
                     <button class="btn btn-outline-primary mt-1 ver-detalle" data-id="${p.id}">
                       Ver detalle
@@ -103,16 +105,18 @@
                 </div>
               </div>
             `).join('')}
-            <div class="col-6 col-sm-4 col-md-2">
-              <div class="card card-sm shadow-sm text-center border rounded-4 h-100 d-flex justify-content-center align-items-center py-4">
-                <button class="btn btn-outline-secondary rounded-circle mb-2" style="width: 48px; height: 48px;">
-                  <i class="bi bi-plus-lg"></i>
-                </button>
-                <div class="fw-semibold text-secondary">Ver más</div>
-              </div>
-            </div>
+            
           </div>
         `;
+
+        // <div class="col-6 col-sm-4 col-md-2">
+        //       <div class="card card-sm shadow-sm text-center border rounded-4 h-100 d-flex justify-content-center align-items-center py-4">
+        //         <button class="btn btn-outline-secondary rounded-circle mb-2" style="width: 48px; height: 48px;">
+        //           <i class="bi bi-plus-lg"></i>
+        //         </button>
+        //         <div class="fw-semibold text-secondary">Ver más</div>
+        //       </div>
+        //     </div>
 
         contenedor.appendChild(seccion);
       });
@@ -131,14 +135,29 @@
   });
 
   function mostrarDetalle(producto) {
-    document.getElementById('modalTitulo').textContent = producto.titulo;
-    document.getElementById('modalPrecio').textContent = `S/ ${producto.precioActual.toFixed(2)}`;
-    document.getElementById('modalPrecioOriginal').textContent = `S/ ${producto.precioOriginal.toFixed(2)}`;
-    document.getElementById('modalImagen').src = producto.imagen;
-    document.getElementById('modalImagen').alt = producto.alt;
-    document.getElementById('modalDescuento').textContent = `-${producto.descuento}%`;
+  document.getElementById('modalTitulo').textContent = producto.titulo;
+  document.getElementById('modalPrecio').textContent = `S/ ${producto.precioActual.toFixed(2)}`;
+  
+  document.getElementById('modalImagen').src = producto.imagen;
+  document.getElementById('modalImagen').alt = producto.alt;
 
-    const modal = new bootstrap.Modal(document.getElementById('modalDetalle'));
-    modal.show();
+  const descuentoEl = document.getElementById('modalDescuento');
+  const precioOriginalEL = document.getElementById('modalPrecioOriginal');
+  if (producto.descuento > 0) {
+    descuentoEl.textContent = `-${producto.descuento}%`;
+    descuentoEl.style.display = 'inline-block';
+  } else {
+    descuentoEl.style.display = 'none';
   }
+
+  if (producto.precioOriginal > 0) {
+    precioOriginalEL.textContent = `-${producto.precioOriginal}%`;
+    // descuentoEl.style.display = 'inline-block';
+  } else {
+    precioOriginalEL.style.display = 'none';
+  }
+
+  const modal = new bootstrap.Modal(document.getElementById('modalDetalle'));
+  modal.show();
+}
 </script>
