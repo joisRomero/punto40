@@ -8,7 +8,7 @@
         "precioActual": 62.90,
         "precioOriginal": 90.70,
         "descuento": 31,
-        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
         "alt": "Vodka Pack"
       },
       {
@@ -17,7 +17,7 @@
         "precioActual": 66.90,
         "precioOriginal": 105.00,
         "descuento": 36,
-        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
         "alt": "Ron Pack"
       }
     ]
@@ -31,7 +31,7 @@
         "precioActual": 32.50,
         "precioOriginal": 45.00,
         "descuento": 28,
-        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
         "alt": "Ron Cartavio"
       }
     ]
@@ -45,7 +45,7 @@
         "precioActual": 21.00,
         "precioOriginal": 28.00,
         "descuento": 25,
-        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
         "alt": "Vino Tabernero"
       }
     ]
@@ -59,7 +59,7 @@
         "precioActual": 79.90,
         "precioOriginal": 109.00,
         "descuento": 27,
-        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
         "alt": "Whisky Red Label"
       }
     ]
@@ -73,7 +73,7 @@
         "precioActual": 29.90,
         "precioOriginal": 39.90,
         "descuento": 25,
-        "imagen": "/img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
         "alt": "Pisco Queirolo"
       }
     ]
