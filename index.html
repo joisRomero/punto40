@@ -4,26 +4,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Licorería Punto 40</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="./img/icono.ico" type="image/x-icon">
 </head>
 
-<body class="bg-light container " style="margin-top: 80px; padding-bottom: 30px;">
+<body class="bg-light" style="margin-top: 70px">
 
   <nav class="navbar fixed-top shadow-sm" style="background-color: #ebebfc;">
+    
     <div class="container-fluid">
       <img src="./img/logo.svg" alt="Logo" height="50" class="d-inline-block align-text-top">
     </div>
   </nav>
 
-  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+  <div class="bg-dark text-white text-center py-1 small mb-3">
+    <strong>📍 Ubícanos en Calle 7 de Junio 648, Zaña</strong>
+  </div>
+
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="container">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Licores</li>
+      <li class="breadcrumb-item active" aria-current="page">Productos</li>
     </ol>
   </nav>
+
 
   <div id="contenedor-productos" class="container"></div>
 
@@ -54,7 +61,21 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
+
+
+  <a href="https://wa.me/51926783703" target="_blank"
+   class="position-fixed bottom-0 end-0 m-3 btn btn-success rounded-circle btn-lg shadow"
+   style="z-index: 1050;">
+  <i class="bi bi-whatsapp fs-4 mt-1"></i>
+</a>
 </body>
+<footer class="bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-1 fw-bold">Licorería Punto 40</p>
+    <p class="mb-1">📍 Calle 7 de Junio 648, Zaña</p>
+    <p class="mb-0">📱 WhatsApp: <a href="https://wa.me/51926783703" class="text-white text-decoration-underline">926 783 703</a></p>
+  </div>
+</footer>
 
 </html>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -135,29 +156,29 @@
   });
 
   function mostrarDetalle(producto) {
-  document.getElementById('modalTitulo').textContent = producto.titulo;
-  document.getElementById('modalPrecio').textContent = `S/ ${producto.precioActual.toFixed(2)}`;
-  
-  document.getElementById('modalImagen').src = producto.imagen;
-  document.getElementById('modalImagen').alt = producto.alt;
+    document.getElementById('modalTitulo').textContent = producto.titulo;
+    document.getElementById('modalPrecio').textContent = `S/ ${producto.precioActual.toFixed(2)}`;
 
-  const descuentoEl = document.getElementById('modalDescuento');
-  const precioOriginalEL = document.getElementById('modalPrecioOriginal');
-  if (producto.descuento > 0) {
-    descuentoEl.textContent = `-${producto.descuento}%`;
-    descuentoEl.style.display = 'inline-block';
-  } else {
-    descuentoEl.style.display = 'none';
+    document.getElementById('modalImagen').src = producto.imagen;
+    document.getElementById('modalImagen').alt = producto.alt;
+
+    const descuentoEl = document.getElementById('modalDescuento');
+    const precioOriginalEL = document.getElementById('modalPrecioOriginal');
+    if (producto.descuento > 0) {
+      descuentoEl.textContent = `-${producto.descuento}%`;
+      descuentoEl.style.display = 'inline-block';
+    } else {
+      descuentoEl.style.display = 'none';
+    }
+
+    if (producto.precioOriginal > 0) {
+      precioOriginalEL.textContent = `-${producto.precioOriginal}%`;
+      // descuentoEl.style.display = 'inline-block';
+    } else {
+      precioOriginalEL.style.display = 'none';
+    }
+
+    const modal = new bootstrap.Modal(document.getElementById('modalDetalle'));
+    modal.show();
   }
-
-  if (producto.precioOriginal > 0) {
-    precioOriginalEL.textContent = `-${producto.precioOriginal}%`;
-    // descuentoEl.style.display = 'inline-block';
-  } else {
-    precioOriginalEL.style.display = 'none';
-  }
-
-  const modal = new bootstrap.Modal(document.getElementById('modalDetalle'));
-  modal.show();
-}
 </script>

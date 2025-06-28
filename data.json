@@ -1,34 +1,11 @@
 [
   {
-    "categoria": "Combos",
-    "productos": [
-      {
-        "id": 1,
-        "titulo": "Pack (1 Schweppes Ginger Ale x 1.5 Lt + 1 Whisky Chivas Regal 12Yo x 700 Ml + Hielo 1.5 Kg)",
-        "precioActual": 62.90,
-        "precioOriginal": 90.70,
-        "descuento": 0,
-        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
-        "alt": "Vodka Pack"
-      },
-      {
-        "id": 2,
-        "titulo": "Pack (2 Ron Captain Morgan 700ml + 1...)",
-        "precioActual": 66.90,
-        "precioOriginal": 105.00,
-        "descuento": 36,
-        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
-        "alt": "Ron Pack"
-      }
-    ]
-  },
-  {
     "categoria": "Ron",
     "productos": [
       {
         "id": 1,
         "titulo": "Ron Cartavio Black 250ml",
-        "precioActual": 15.00,
+        "precioActual": 13.00,
         "precioOriginal": 0,
         "descuento": 0,
         "imagen": "./img/ron-cartavio-black-250-ml.webp",
@@ -37,7 +14,7 @@
       {
         "id": 2,
         "titulo": "Ron Cartavio Blanco 250ml",
-        "precioActual": 15.00,
+        "precioActual": 13.00,
         "precioOriginal": 0,
         "descuento": 0,
         "imagen": "./img/ron-cartavio-blanco-250-ml.webp",
@@ -55,7 +32,7 @@
       {
         "id": 12,
         "titulo": "Ron Flor de Caña 4 Años 750ml",
-        "precioActual": 54.00,
+        "precioActual": 43.00,
         "precioOriginal": 0,
         "descuento": 0,
         "imagen": "./img/flor-cana-4.webp",
@@ -67,14 +44,51 @@
     "categoria": "Vino",
     "productos": [
       {
+        "id": 11,
+        "titulo": "Vino Viña Vieja 750ml",
+        "precioActual": 15.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/vino-vina-vieja-750.webp",
+        "alt": "Vino Tabernero"
+      },
+      {
         "id": 4,
-        "titulo": "Vino Tabernero Borgoña 750ml",
-        "precioActual": 21.00,
-        "precioOriginal": 28.00,
-        "descuento": 25,
-        "imagen": "./img/LGYQAa5qZZtsLhTmD-300-x.webp",
+        "titulo": "Vino E. Copello 750ml",
+        "precioActual": 16.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/vino-e-copello-750.webp",
+        "alt": "Vino Tabernero"
+      },
+      {
+        "id": 4,
+        "titulo": "Vino Queirolo Magdalena 750ml",
+        "precioActual": 17.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/vino-queirolo-magdalena-750.webp",
+        "alt": "Vino Tabernero"
+      },
+      {
+        "id": 4,
+        "titulo": "Vino Rose Queirolo 750ml",
+        "precioActual": 17.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/vino-rose-queirolo-750.webp",
+        "alt": "Vino Tabernero"
+      },
+      {
+        "id": 4,
+        "titulo": "Vino Tabernero 750ml",
+        "precioActual": 17,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/vino-tabernero-750.webp",
         "alt": "Vino Tabernero"
       }
+      
     ]
   },
   {
@@ -97,7 +111,7 @@
       {
         "id": 5,
         "titulo": "Whisky Old Times Red Label 750ml",
-        "precioActual": 27.00,
+        "precioActual": 24.00,
         "precioOriginal": 0.00,
         "descuento": 0,
         "imagen": "./img/wiskey-old-time-red-label-750.webp",
@@ -134,6 +148,20 @@
         "descuento": 0,
         "imagen": "./img/pisco-cuatro-gallos-700.webp",
         "alt": "Pisco Queirolo"
+      }
+    ]
+  },
+  {
+    "categoria": "Gaseosas",
+    "productos": [
+      {
+        "id": 15,
+        "titulo": "Ginger Ale 1.5 Lt",
+        "precioActual": 6.50,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/ginger-ale-1500.webp",
+        "alt": "Ginger Ale"
       }
     ]
   }
