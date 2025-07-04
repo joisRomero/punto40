@@ -1,5 +1,19 @@
 [
   {
+    "categoria": "Whisky",
+    "productos": [
+      {
+        "id": 5,
+        "titulo": "Whisky Old Times Red Label 750ml",
+        "precioActual": 24.00,
+        "precioOriginal": 0.00,
+        "descuento": 0,
+        "imagen": "./img/wiskey-old-time-red-label-750.webp",
+        "alt": "Whisky Old Times Red Label 750ml"
+      }
+    ]
+  },
+  {
     "categoria": "Ron",
     "productos": [
       {
@@ -30,6 +44,15 @@
         "alt": "Ron Cartavio"
       },
       {
+        "id": 28,
+        "titulo": "Ron Barceló Dorado 1Lt",
+        "precioActual": 35.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/ron-barcelo-dorado-1000.png",
+        "alt": "Ron Barceló dorado"
+      },
+      {
         "id": 12,
         "titulo": "Ron Flor de Caña 4 Años 750ml",
         "precioActual": 43.00,
@@ -37,6 +60,79 @@
         "descuento": 0,
         "imagen": "./img/flor-cana-4.webp",
         "alt": "Ron Cartavio"
+      }
+    ]
+  },
+  {
+    "categoria": "Pisco",
+    "productos": [
+      {
+        "id": 13,
+        "titulo": "Pisco Pancho Fierro 750ml",
+        "precioActual": 28.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/pisco-pancho-fierro-750.webp",
+        "alt": "Pisco Queirolo"
+      },
+      {
+        "id": 9,
+        "titulo": "Pisco Tabernero La Botija 700ml",
+        "precioActual": 30.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/pisco-tabernero-botija-700.webp",
+        "alt": "Pisco Queirolo"
+      },
+      {
+        "id": 14,
+        "titulo": "Pisco Cuatro Gallos 700ml",
+        "precioActual": 43.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/pisco-cuatro-gallos-700.webp",
+        "alt": "Pisco Queirolo"
+      }
+    ]
+  },
+  {
+    "categoria": "Cerveza",
+    "productos": [
+      {
+        "id": 29,
+        "titulo": "Cerveza Pilsen Callao 630ml",
+        "precioActual": 7.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/cerveza-pilsen-630.webp",
+        "alt": "Pisco Queirolo"
+      },
+      {
+        "id": 30,
+        "titulo": "Cerveza Cristal 650ml",
+        "precioActual": 6.50,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/cerveza-cristal-650.jpeg",
+        "alt": "Pisco Queirolo"
+      },
+      {
+        "id": 31,
+        "titulo": "Cerveza Cusqueña Trigo 620ml",
+        "precioActual": 7.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/cerveza-trigo-cusquena.jpg",
+        "alt": "Pisco Queirolo"
+      },
+      {
+        "id": 32,
+        "titulo": "Cerveza Cusqueña Negra 620ml",
+        "precioActual": 7.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/cerveza-negra-cusquena.png",
+        "alt": "Pisco Queirolo"
       }
     ]
   },
@@ -88,7 +184,6 @@
         "imagen": "./img/vino-tabernero-750.webp",
         "alt": "Vino Tabernero"
       }
-      
     ]
   },
   {
@@ -106,61 +201,105 @@
     ]
   },
   {
-    "categoria": "Whisky",
-    "productos": [
-      {
-        "id": 5,
-        "titulo": "Whisky Old Times Red Label 750ml",
-        "precioActual": 24.00,
-        "precioOriginal": 0.00,
-        "descuento": 0,
-        "imagen": "./img/wiskey-old-time-red-label-750.webp",
-        "alt": "Whisky Old Times Red Label 750ml"
-      }
-    ]
-  },
-  {
-    "categoria": "Pisco",
-    "productos": [
-      {
-        "id": 13,
-        "titulo": "Pisco Pancho Fierro 750ml",
-        "precioActual": 28.00,
-        "precioOriginal": 0,
-        "descuento": 0,
-        "imagen": "./img/pisco-pancho-fierro-750.webp",
-        "alt": "Pisco Queirolo"
-      },
-      {
-        "id": 14,
-        "titulo": "Pisco Tabernero La Botija 700ml",
-        "precioActual": 30.00,
-        "precioOriginal": 0,
-        "descuento": 0,
-        "imagen": "./img/pisco-tabernero-botija-700.webp",
-        "alt": "Pisco Queirolo"
-      },
-      {
-        "id": 14,
-        "titulo": "Pisco Cuatro Gallos 700ml",
-        "precioActual": 43.00,
-        "precioOriginal": 0,
-        "descuento": 0,
-        "imagen": "./img/pisco-cuatro-gallos-700.webp",
-        "alt": "Pisco Queirolo"
-      }
-    ]
-  },
-  {
     "categoria": "Gaseosas",
     "productos": [
       {
         "id": 15,
-        "titulo": "Ginger Ale 1.5 Lt",
-        "precioActual": 6.50,
+        "titulo": "Ginger Ale 1.5Lt",
+        "precioActual": 7.00,
         "precioOriginal": 0,
         "descuento": 0,
         "imagen": "./img/ginger-ale-1500.webp",
+        "alt": "Ginger Ale"
+      },
+      {
+        "id": 16,
+        "titulo": "Coca Cola  3Lt",
+        "precioActual": 12.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/gaseosa-coca-cola-3000.webp",
+        "alt": "Ginger Ale"
+      },
+      {
+        "id": 17,
+        "titulo": "Inca Kola  3Lt",
+        "precioActual": 12.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/gaseosa-inka-cola-3000.webp",
+        "alt": "Ginger Ale"
+      },
+      {
+        "id": 18,
+        "titulo": "Coca Cola  1.5Lt",
+        "precioActual": 7.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/gaseosa-coca-cola-1500.jpg",
+        "alt": "Ginger Ale"
+      },
+      {
+        "id": 19,
+        "titulo": "Inca Kola  1.5Lt",
+        "precioActual": 7.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/gaseosa-inka-cola-1500.PNG",
+        "alt": "Ginger Ale"
+      },
+      {
+        "id": 20,
+        "titulo": "Coca Cola  1Lt",
+        "precioActual": 5.50,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/gaseosa-coca-cola-1000.webp",
+        "alt": "Ginger Ale"
+      },
+      {
+        "id": 21,
+        "titulo": "Inca Kola  1Lt",
+        "precioActual": 5.50,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/gaseosa-inka-cola-1000.PNG",
+        "alt": "Ginger Ale"
+      },
+      {
+        "id": 22,
+        "titulo": "Coca Cola  500ml",
+        "precioActual": 3.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/gaseosa-coca-cola-500.webp",
+        "alt": "Ginger Ale"
+      },
+      {
+        "id": 23,
+        "titulo": "Inca Kola  500ml",
+        "precioActual": 3.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/gaseosa-inka-cola-500.webp",
+        "alt": "Ginger Ale"
+      },
+      {
+        "id": 24,
+        "titulo": "Pepsi 1Lt",
+        "precioActual": 4.00,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/gaseosa-pepsi-1000.webp",
+        "alt": "Ginger Ale"
+      },
+      {
+        "id": 25,
+        "titulo": "Guaraná 1Lt",
+        "precioActual": 3.50,
+        "precioOriginal": 0,
+        "descuento": 0,
+        "imagen": "./img/gaseosa-guarana-1000.webp",
         "alt": "Ginger Ale"
       }
     ]
