@@ -55,7 +55,7 @@
       {
         "id": 12,
         "titulo": "Ron Flor de Caña 4 Años 750ml",
-        "precioActual": 43.00,
+        "precioActual": 45.00,
         "precioOriginal": 0,
         "descuento": 0,
         "imagen": "./img/flor-cana-4.webp",
@@ -68,29 +68,29 @@
     "productos": [
       {
         "id": 13,
-        "titulo": "Pisco Pancho Fierro 750ml",
-        "precioActual": 28.00,
+        "titulo": "Pisco Pack Pancho Fierro 750ml",
+        "precioActual": 30.00,
         "precioOriginal": 0,
         "descuento": 0,
-        "imagen": "./img/pisco-pancho-fierro-750.webp",
+        "imagen": "./img/pack-chilcanero-pisco-pancho-fierro-quebranta-750ml.webp",
         "alt": "Pisco Queirolo"
       },
       {
         "id": 9,
-        "titulo": "Pisco Tabernero La Botija 700ml",
-        "precioActual": 30.00,
+        "titulo": "Pisco Tabernero La Botija 700ml + Shot",
+        "precioActual": 34.00,
         "precioOriginal": 0,
         "descuento": 0,
-        "imagen": "./img/pisco-tabernero-botija-700.webp",
+        "imagen": "./img/pisco-tabernero-shot.jpg",
         "alt": "Pisco Queirolo"
       },
       {
         "id": 14,
-        "titulo": "Pisco Cuatro Gallos 700ml",
+        "titulo": "Pisco Pack Cuatro Gallos 700ml",
         "precioActual": 43.00,
         "precioOriginal": 0,
         "descuento": 0,
-        "imagen": "./img/pisco-cuatro-gallos-700.webp",
+        "imagen": "./img/pisco-pack-4gallo.jpg",
         "alt": "Pisco Queirolo"
       }
     ]
